@@ -1,0 +1,157 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    background-color: #e2eafc;
+    margin: 2%;
+}
+
+header{
+    margin: 2%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    width: 120px;
+    height: 48px;
+}
+
+.form__section{
+    display: flex; /* para posicionar en linea*/
+    flex-direction: column;  /* para posicionar en colucna*/
+    justify-content: space-between; /* para separar dos elementos*/
+    height: 90dvh; /* para bajar los botones*/
+}
+
+.form__input{
+    width: 100%;
+    max-width: 577px; /*alargar el cuadro donde se ingresa el texto*/
+    border-color: transparent; /*quitar el borde del recuadro donde se ingresa el texto*/
+    height: 64dvh; /* aumentar la altura del recuadro donde se ingresa el texto*/
+    outline: none;
+    background-color: #e2eafc;
+    font-family: "Inter", sans-serif;   
+    font-size: 3.2rem;
+    color: #000000;
+    margin-bottom: 3rem;
+    overflow: auto;
+}
+
+.aler__mdj{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-family: "Inter", sans-serif;   
+}
+
+
+.form__btn--encriptar{  /* Boton 1*/
+    background-color: #03045e;
+    color: #edf2fb;
+    font-size: 1.7rem;
+    padding: 1rem 2rem; /* para anchar la parte azul del boton 1*/
+    width: 320px; /* para que el boton se mas largo*/
+    height: 67%;
+    border-radius: 24px;
+}
+
+.form__btn--desencriptar{
+    border: 3px;
+    background-color: #a2d6f9;
+    font-size: 1.7rem;
+    padding: 1rem 2rem; /* para anchar la parte azul del boton 1*/
+    width: 320px; /* para que el boton se mas largo*/
+    height: 67%;
+    border-radius: 24px;
+    color: #000000;
+    font-family: "Inter", sans-serif;   
+}
+
+
+.resultado{
+    background-color: #9197ae;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 92dvh;
+    border-radius: 32px;
+    max-width: 40rem;
+    width: 100%;
+}
+
+.resultado__titulo{
+    font-size: 1.7rem;
+    color: #03045e;
+    font-family: "Inter", sans-serif;   
+    text-align: center;
+}
+
+.resultado__texto{
+    font-size: 1.3rem;
+    color: black;
+    font-family: "Inter", sans-serif;   
+}
+
+.resultado__btn{
+    border: 3px;
+    background-color: #bf0603;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    width: 320px; 
+    height: 67;
+    border-radius: 24px;
+    color: #000000;
+    font-family: "Inter", sans-serif;  
+}
+
+.resultado__img{
+    display: block;
+
+    
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .form__input {
+        font-size: 2rem;
+    }
+
+    .form__btn--encriptar, .form__btn--desencriptar, .resultado__btn {
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+
+    .resultado {
+        max-width: 6%;
+        gap: 3rem;
+    }
+
+    .resultado__titulo, .resultado__texto {
+        font-size: 1.2rem;
+    }
+
+    
+}
+
+    
+    
+    

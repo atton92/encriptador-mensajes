@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <img src="./svg/Logo.png">
+   </header> 
+
+   <main>
+
+    <form class="form__section">
+    <textarea class="form__input" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+    <div class="submit__container">  
+        <div class="aler__mdj"><span>Solo letras en minuscula y sin acentos </span>
+    </div>
+
+    <input class="form__btn--encriptar" type="submit" value="Encriptar">
+    <input class="form__btn--desencriptar" type="submit" value="desencriptar">
+   
+</div> 
+
+    </form>
+
+    <aside class="resultado">
+        <img src="./assets/Muñeco.png" alt="imagen del muñeco" class="resultado__img">
+        <div class="resultado__container">
+         <h3 class="resultado__titulo">Ningun mensaje fue encontrado</h3>
+         <p class="resultado__texto">Ingresa el texto que deseas desencriptar o encriptar</p>
+         <button class="resultado__btn hidden">Copiar</button>
+        </div>
+    </aside>
+
+   </main>
+   <script src="app.js"></script>
+</body>
+</html>
